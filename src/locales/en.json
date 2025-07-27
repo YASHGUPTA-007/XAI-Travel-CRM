@@ -1,0 +1,272 @@
+{
+  "nav": {
+    "features": "Features",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "signIn": "Sign In",
+    "startFreeTrial": "Start Free Trial",
+    "switchToHindi": "हिंदी",
+    "switchToEnglish": "English"
+  },
+  "solutions": {
+    "travelAgencies": "Travel Agencies",
+    "soloAgents": "Solo Agents",
+    "groupOrganizers": "Group Organizers",
+    "corporateTeams": "Corporate Teams"
+  },
+  "hero": {
+    "title": "Plan Smarter. Travel Better. Grow Your Agency. Automate Bookings.",
+    "subtitle": "The all-in-one CRM solution designed specifically for travel agencies to streamline operations and boost revenue.",
+    "startFreeTrial": "Start Free Trial",
+    "watchDemo": "Watch Demo"
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to manage your travel business efficiently",
+    "leadManagement": {
+      "title": "Lead Management",
+      "description": "Capture, organize and nurture leads through your sales pipeline."
+    },
+    "tripPlanning": {
+      "title": "Trip Planning",
+      "description": "Create detailed itineraries and manage complex travel arrangements."
+    },
+    "bookingCalendar": {
+      "title": "Booking Calendar",
+      "description": "Visual calendar to track bookings, deadlines, and important dates."
+    },
+    "autoFollowUps": {
+      "title": "Auto Follow-ups",
+      "description": "Automated email sequences to keep clients engaged throughout their journey."
+    },
+    "clientNotes": {
+      "title": "Client Notes",
+      "description": "Detailed client profiles with preferences, history, and special requirements."
+    },
+    "pipelineTracking": {
+      "title": "Pipeline Tracking",
+      "description": "Visual sales pipeline to track deals from inquiry to booking."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your business needs. All plans include a 14-day free trial.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "discount": "(20% off)",
+    "year": "year",
+    "month": "month",
+    "mostPopular": "Most Popular",
+    "getStarted": "Get Started",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "Perfect for getting started",
+        "features": {
+          "contacts": "Up to 50 contacts",
+          "basic": "Basic CRM features",
+          "email": "Email support",
+          "mobile": "Mobile app access"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Best for growing agencies",
+        "features": {
+          "contacts": "Unlimited contacts",
+          "analytics": "Advanced analytics",
+          "workflows": "Automated workflows",
+          "support": "Priority support",
+          "api": "API access",
+          "integrations": "Custom integrations"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For large organizations",
+        "features": {
+          "everything": "Everything in Pro",
+          "whiteLabel": "White-label solution",
+          "accountManager": "Dedicated account manager",
+          "customDev": "Custom development",
+          "security": "Advanced security",
+          "sla": "SLA guarantee"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. Here's what travel professionals are saying about our CRM.",
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "Travel Agency Owner",
+      "text": "This CRM transformed our agency! We've increased bookings by 40% and our team is more organized than ever. The automation features save us hours every day."
+    },
+    "mike": {
+      "name": "Mike Chen",
+      "role": "Solo Travel Consultant",
+      "text": "As a solo agent, I needed something simple yet powerful. This platform gives me everything I need to compete with larger agencies while staying personal with my clients."
+    },
+    "emma": {
+      "name": "Emma Davis",
+      "role": "Group Travel Coordinator",
+      "text": "Managing group trips used to be a nightmare. Now I can track payments, communicate with groups, and organize complex itineraries all in one place. Game changer!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 TravelCRM. All rights reserved.",
+    "trustedBy": "Trusted by 500+ travel agencies worldwide",
+    "tagline": "Empowering Travel Agents to Sell Smarter.",
+    "description": "The complete CRM solution designed specifically for travel professionals who want to grow their business efficiently and deliver exceptional customer experiences.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "aboutUs": "About Us",
+      "features": "Features",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "faqs": "FAQs",
+      "partnerProgram": "Partner Program",
+      "apiDocumentation": "API Documentation",
+      "customerSuccess": "Customer Success"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Get travel tips & CRM updates in your inbox",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "success": "Thanks for subscribing!"
+    },
+    "builtWith": "Built with",
+    "forTravelCreators": "for modern travel creators.",
+    "legal": {
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Got questions? We've got answers. If you can't find what you're looking for, feel free to contact our support team.",
+    "security": {
+      "question": "How secure is your CRM?",
+      "answer": "We use enterprise-grade security with 256-bit SSL encryption, regular security audits, and compliance with industry standards. Your data is stored securely in the cloud with automated backups."
+    },
+    "cancellation": {
+      "question": "Can I cancel anytime?",
+      "answer": "Yes, you can cancel your subscription at any time with no cancellation fees. You'll continue to have access until the end of your current billing period."
+    },
+    "trial": {
+      "question": "Do you offer a free trial?",
+      "answer": "Absolutely! We offer a 14-day free trial for all our paid plans. No credit card required to get started."
+    },
+    "support": {
+      "question": "What kind of support do you provide?",
+      "answer": "We provide email support for all users, priority support for Pro users, and dedicated account management for Enterprise customers. We also have comprehensive documentation and video tutorials."
+    },
+    "import": {
+      "question": "Can I import my existing data?",
+      "answer": "Yes, we provide easy data import tools that support CSV files and direct imports from popular CRM systems. Our team can also assist with custom data migration for Enterprise customers."
+    },
+    "mobile": {
+      "question": "Do you offer mobile apps?",
+      "answer": "Yes, we have native mobile apps for both iOS and Android devices, allowing you to manage your travel business on the go."
+    }
+  },
+  "solutions": {
+    "title": "Solutions for Every Travel Business",
+    "subtitle": "Tailored features and workflows designed for different types of travel professionals.",
+    "agencies": {
+      "title": "Travel Agencies",
+      "description": "Complete CRM solution for established travel agencies",
+      "features": {
+        "multiAgent": "Multi-agent support",
+        "reporting": "Advanced reporting",
+        "collaboration": "Team collaboration tools",
+        "integrations": "Enterprise integrations"
+      }
+    },
+    "solo": {
+      "title": "Solo Travel Agents",
+      "description": "Perfect for independent travel consultants",
+      "features": {
+        "dashboard": "Personal dashboard",
+        "relationships": "Client relationship tools",
+        "workflows": "Automated workflows",
+        "mobile": "Mobile accessibility"
+      }
+    },
+    "groups": {
+      "title": "Group Trip Organizers",
+      "description": "Specialized tools for group travel coordination",
+      "features": {
+        "management": "Group management",
+        "payments": "Payment tracking",
+        "communication": "Communication tools",
+        "planning": "Event planning"
+      }
+    },
+    "corporate": {
+      "title": "Corporate Travel Teams",
+      "description": "Enterprise solutions for corporate travel management",
+      "features": {
+        "compliance": "Policy compliance",
+        "expenses": "Expense management",
+        "approvals": "Approval workflows",
+        "analytics": "Travel analytics"
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Our CRM?",
+    "subtitle": "Designed specifically for travel professionals who want to grow their business efficiently.",
+    "saveTime": {
+      "title": "Save Time",
+      "description": "Automate repetitive tasks and focus on what matters most - your clients."
+    },
+    "manageClients": {
+      "title": "Manage Clients",
+      "description": "Keep all client information, preferences, and history in one place."
+    },
+    "boostSales": {
+      "title": "Boost Sales",
+      "description": "Track leads, follow up automatically, and close more deals."
+    },
+    "dashboard": {
+      "title": "All-in-One Dashboard",
+      "description": "Get insights, analytics, and manage everything from a single interface."
+    }
+  },
+  "integrations": {
+    "title": "Trusted Integrations",
+    "subtitle": "Connect with the tools you already use and love. Our CRM integrates seamlessly with popular business applications.",
+    "googleWorkspace": "Google Workspace",
+    "whatsapp": "WhatsApp",
+    "stripe": "Stripe",
+    "gmail": "Gmail",
+    "googleMaps": "Google Maps",
+    "slack": "Slack"
+  },
+  "finalCTA": {
+    "title": "Join 1000+ Travel Agencies Growing with Us",
+    "subtitle": "Ready to transform your travel business? Start your free trial today and see why thousands of travel professionals trust our CRM.",
+    "signUp": "Sign Up Free",
+    "scheduleDemo": "Schedule a Demo",
+    "stats": {
+      "agencies": "Travel Agencies",
+      "bookings": "Bookings Managed",
+      "satisfaction": "Customer Satisfaction"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!"
+  }
+} 

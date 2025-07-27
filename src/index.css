@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide Google Translate banner and widget */
+.goog-te-banner-frame,
+.goog-te-gadget-simple,
+.goog-te-gadget,
+.goog-te-menu-value,
+.goog-te-combo,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover,
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Optional: prevent top margin if Translate shifts page */
+body > .skiptranslate {
+  display: none !important;
+}
