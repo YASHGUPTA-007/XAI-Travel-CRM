@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Building2, User, Users2, Briefcase } from 'lucide-react';
 
 const Solutions = () => {
-  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState(0);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -15,46 +13,46 @@ const Solutions = () => {
   const solutions = [
     {
       icon: Building2,
-      title: t('solutions.agencies.title'),
-      description: t('solutions.agencies.description'),
+      title: "Travel Agencies",
+      description: "Scale your agency with powerful tools designed for multi-agent operations",
       features: [
-        t('solutions.agencies.features.multiAgent'),
-        t('solutions.agencies.features.reporting'),
-        t('solutions.agencies.features.collaboration'),
-        t('solutions.agencies.features.integrations')
+        "Multi-agent collaboration tools",
+        "Advanced reporting and analytics",
+        "Team workflow management",
+        "Third-party integrations"
       ]
     },
     {
       icon: User,
-      title: t('solutions.solo.title'),
-      description: t('solutions.solo.description'),
+      title: "Solo Travel Agents",
+      description: "Everything you need to manage your independent travel business efficiently",
       features: [
-        t('solutions.solo.features.dashboard'),
-        t('solutions.solo.features.relationships'),
-        t('solutions.solo.features.workflows'),
-        t('solutions.solo.features.mobile')
+        "Personalized dashboard",
+        "Client relationship management",
+        "Automated workflows",
+        "Mobile-first design"
       ]
     },
     {
       icon: Users2,
-      title: t('solutions.groups.title'),
-      description: t('solutions.groups.description'),
+      title: "Group Organizers",
+      description: "Streamline group travel planning with specialized tools and features",
       features: [
-        t('solutions.groups.features.management'),
-        t('solutions.groups.features.payments'),
-        t('solutions.groups.features.communication'),
-        t('solutions.groups.features.planning')
+        "Group management tools",
+        "Payment processing",
+        "Communication hub",
+        "Itinerary planning"
       ]
     },
     {
       icon: Briefcase,
-      title: t('solutions.corporate.title'),
-      description: t('solutions.corporate.description'),
+      title: "Corporate Teams",
+      description: "Enterprise-grade solutions for corporate travel management",
       features: [
-        t('solutions.corporate.features.compliance'),
-        t('solutions.corporate.features.expenses'),
-        t('solutions.corporate.features.approvals'),
-        t('solutions.corporate.features.analytics')
+        "Compliance management",
+        "Expense tracking",
+        "Approval workflows",
+        "Advanced analytics"
       ]
     }
   ];
@@ -77,10 +75,10 @@ const Solutions = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            {t('solutions.title')}
+            Solutions for Every Travel Professional
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            {t('solutions.subtitle')}
+            Tailored solutions designed to meet the unique needs of different travel businesses
           </p>
         </motion.div>
         

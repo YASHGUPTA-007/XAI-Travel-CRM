@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Clock, Users, TrendingUp, BarChart3 } from 'lucide-react';
 
 const WhyChooseUs = () => {
-  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -14,26 +12,26 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: Clock,
-      title: t('whyChooseUs.saveTime.title'),
-      description: t('whyChooseUs.saveTime.description'),
+      title: "Save Time",
+      description: "Automate repetitive tasks and focus on what matters most - growing your business",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Users,
-      title: t('whyChooseUs.manageClients.title'),
-      description: t('whyChooseUs.manageClients.description'),
+      title: "Manage Clients",
+      description: "Keep all client information organized and accessible in one centralized platform",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: TrendingUp,
-      title: t('whyChooseUs.boostSales.title'),
-      description: t('whyChooseUs.boostSales.description'),
+      title: "Boost Sales",
+      description: "AI-powered insights help you identify opportunities and increase revenue",
       color: "from-green-500 to-teal-500"
     },
     {
       icon: BarChart3,
-      title: t('whyChooseUs.dashboard.title'),
-      description: t('whyChooseUs.dashboard.description'),
+      title: "Real-time Analytics",
+      description: "Track performance, monitor trends, and make data-driven decisions",
       color: "from-orange-500 to-red-500"
     }
   ];
@@ -56,10 +54,10 @@ const WhyChooseUs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            {t('whyChooseUs.title')}
+            Why Choose XAI Travel CRM?
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            {t('whyChooseUs.subtitle')}
+            Experience the future of travel management with our cutting-edge AI technology
           </p>
         </motion.div>
         

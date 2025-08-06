@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { 
   Plane, 
   Twitter, 
@@ -15,7 +14,6 @@ import {
 } from 'lucide-react';
 
 const Footer = () => {
-  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [ref, inView] = useInView({
@@ -33,19 +31,19 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: t('footer.quickLinks.aboutUs'), href: '#about' },
-    { name: t('footer.quickLinks.features'), href: '#features' },
-    { name: t('footer.quickLinks.pricing'), href: '#pricing' },
-    { name: t('footer.quickLinks.blog'), href: '#blog' },
-    { name: t('footer.quickLinks.contact'), href: '#contact' }
+    { name: "About Us", href: '#about' },
+    { name: "Features", href: '#features' },
+    { name: "Pricing", href: '#pricing' },
+    { name: "Blog", href: '#blog' },
+    { name: "Contact", href: '#contact' }
   ];
 
   const supportLinks = [
-    { name: t('footer.support.helpCenter'), href: '#help' },
-    { name: t('footer.support.faqs'), href: '#faq' },
-    { name: t('footer.support.partnerProgram'), href: '#partners' },
-    { name: t('footer.support.apiDocumentation'), href: '#api' },
-    { name: t('footer.support.customerSuccess'), href: '#success' }
+    { name: "Help Center", href: '#help' },
+    { name: "FAQs", href: '#faq' },
+    { name: "Partner Program", href: '#partners' },
+    { name: "API Documentation", href: '#api' },
+    { name: "Customer Success", href: '#success' }
   ];
 
   const trustedLogos = [
@@ -71,7 +69,7 @@ const Footer = () => {
           className="py-8 border-b border-white/10"
         >
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <p className="text-white/60 mb-4">{t('footer.trustedBy')}</p>
+            <p className="text-white/60 mb-4">Trusted by leading travel companies worldwide</p>
             <div className="flex flex-wrap justify-center items-center gap-8">
               {trustedLogos.map((logo, index) => (
                 <motion.div
@@ -107,11 +105,11 @@ const Footer = () => {
                 </div>
                 
                 <p className="text-blue-300 font-semibold">
-                  {t('footer.tagline')}
+                  AI-Powered Travel CRM
                 </p>
                 
                 <p className="text-white/70 leading-relaxed">
-                  {t('footer.description')}
+                  Streamline your travel business with intelligent automation, AI-powered itineraries, and seamless customer management.
                 </p>
                 
                 <div className="flex gap-4">
@@ -139,7 +137,7 @@ const Footer = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <h3 className="text-white font-bold text-lg mb-6">{t('footer.quickLinks.title')}</h3>
+                <h3 className="text-white font-bold text-lg mb-6">Quick Links</h3>
                 <ul className="space-y-3">
                   {quickLinks.map((link, index) => (
                     <li key={index}>
@@ -162,7 +160,7 @@ const Footer = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <h3 className="text-white font-bold text-lg mb-6">{t('footer.support.title')}</h3>
+                <h3 className="text-white font-bold text-lg mb-6">Support</h3>
                 <ul className="space-y-3">
                   {supportLinks.map((link, index) => (
                     <li key={index}>
@@ -185,9 +183,9 @@ const Footer = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <h3 className="text-white font-bold text-lg mb-6">{t('footer.newsletter.title')}</h3>
+                <h3 className="text-white font-bold text-lg mb-6">Newsletter</h3>
                 <p className="text-white/70 mb-4">
-                  {t('footer.newsletter.description')}
+                  Stay updated with the latest travel industry insights and product updates
                 </p>
                 
                 <form onSubmit={handleSubscribe} className="space-y-3">
@@ -196,7 +194,7 @@ const Footer = () => {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder={t('footer.newsletter.placeholder')}
+                      placeholder="Enter your email address"
                       className="w-full px-4 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300"
                       required
                     />
@@ -209,7 +207,7 @@ const Footer = () => {
                     whileTap={{ scale: 0.98 }}
                     className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    {t('footer.newsletter.subscribe')}
+                    Subscribe
                   </motion.button>
                 </form>
 
@@ -221,7 +219,7 @@ const Footer = () => {
                     className="mt-3 p-3 bg-green-500/20 border border-green-500/30 rounded-xl text-green-200 text-sm flex items-center gap-2"
                   >
                     <CheckCircle size={16} />
-                    {t('footer.newsletter.success')}
+                    Successfully subscribed!
                   </motion.div>
                 )}
               </motion.div>
@@ -234,22 +232,22 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-white/60">
-                <span>{t('footer.copyright')}</span>
+                <span>© 2024 XAI Travel CRM. All rights reserved.</span>
                 <span className="hidden md:inline">•</span>
                 <span className="flex items-center gap-1">
-                  {t('footer.builtWith')} <Heart className="text-red-400 fill-current" size={16} /> {t('footer.forTravelCreators')}
+                  Built with <Heart className="text-red-400 fill-current" size={16} /> for travel creators
                 </span>
               </div>
               
               <div className="flex items-center gap-6 text-sm">
                 <a href="#terms" className="text-white/60 hover:text-white transition-colors duration-300">
-                  {t('footer.legal.terms')}
+                  Terms of Service
                 </a>
                 <a href="#privacy" className="text-white/60 hover:text-white transition-colors duration-300">
-                  {t('footer.legal.privacy')}
+                  Privacy Policy
                 </a>
                 <a href="#cookies" className="text-white/60 hover:text-white transition-colors duration-300">
-                  {t('footer.legal.cookies')}
+                  Cookie Policy
                 </a>
               </div>
             </div>

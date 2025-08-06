@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Check, Star } from 'lucide-react';
 
 const Pricing = () => {
-  const { t } = useTranslation();
   const [isYearly, setIsYearly] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -14,42 +12,42 @@ const Pricing = () => {
 
   const plans = [
     {
-      name: t('pricing.plans.free.name'),
+      name: "Free",
       price: { monthly: 0, yearly: 0 },
-      description: t('pricing.plans.free.description'),
+      description: "Perfect for getting started with basic travel management",
       features: [
-        t('pricing.plans.free.features.contacts'),
-        t('pricing.plans.free.features.basic'),
-        t('pricing.plans.free.features.email'),
-        t('pricing.plans.free.features.mobile')
+        "Up to 50 contacts",
+        "Basic CRM features",
+        "Email support",
+        "Mobile app access"
       ],
       popular: false
     },
     {
-      name: t('pricing.plans.pro.name'),
+      name: "Professional",
       price: { monthly: 49, yearly: 39 },
-      description: t('pricing.plans.pro.description'),
+      description: "Ideal for growing travel businesses and agencies",
       features: [
-        t('pricing.plans.pro.features.contacts'),
-        t('pricing.plans.pro.features.analytics'),
-        t('pricing.plans.pro.features.workflows'),
-        t('pricing.plans.pro.features.support'),
-        t('pricing.plans.pro.features.api'),
-        t('pricing.plans.pro.features.integrations')
+        "Unlimited contacts",
+        "Advanced analytics",
+        "Automated workflows",
+        "Priority support",
+        "API access",
+        "Third-party integrations"
       ],
       popular: true
     },
     {
-      name: t('pricing.plans.enterprise.name'),
+      name: "Enterprise",
       price: { monthly: 99, yearly: 79 },
-      description: t('pricing.plans.enterprise.description'),
+      description: "Complete solution for large teams and corporations",
       features: [
-        t('pricing.plans.enterprise.features.everything'),
-        t('pricing.plans.enterprise.features.whiteLabel'),
-        t('pricing.plans.enterprise.features.accountManager'),
-        t('pricing.plans.enterprise.features.customDev'),
-        t('pricing.plans.enterprise.features.security'),
-        t('pricing.plans.enterprise.features.sla')
+        "Everything in Professional",
+        "White-label options",
+        "Dedicated account manager",
+        "Custom development",
+        "Enhanced security",
+        "SLA guarantees"
       ],
       popular: false
     }
@@ -73,15 +71,15 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            {t('pricing.title')}
+            Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            {t('pricing.subtitle')}
+            Choose the plan that fits your business needs. No hidden fees, no surprises.
           </p>
           
           {/* Toggle */}
           <div className="flex items-center justify-center gap-4">
-            <span className={`${!isYearly ? 'text-gray-800' : 'text-gray-500'}`}>{t('pricing.monthly')}</span>
+            <span className={`${!isYearly ? 'text-gray-800' : 'text-gray-500'}`}>Monthly</span>
             <button
               onClick={() => setIsYearly(!isYearly)}
               className="relative w-14 h-8 bg-gray-300 rounded-full transition-colors duration-300 focus:outline-none"
@@ -91,7 +89,7 @@ const Pricing = () => {
               }`} />
             </button>
             <span className={`${isYearly ? 'text-gray-800' : 'text-gray-500'}`}>
-              {t('pricing.yearly')} <span className="text-green-600 text-sm">{t('pricing.discount')}</span>
+              Yearly <span className="text-green-600 text-sm">Save 20%</span>
             </span>
           </div>
         </motion.div>
@@ -114,7 +112,7 @@ const Pricing = () => {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1">
                     <Star size={16} className="fill-current" />
-                    {t('pricing.mostPopular')}
+                    Most Popular
                   </div>
                 </div>
               )}
@@ -126,7 +124,7 @@ const Pricing = () => {
                   <span className="text-5xl font-bold text-gray-800">
                     ${isYearly ? plan.price.yearly : plan.price.monthly}
                   </span>
-                  <span className="text-gray-600">/{isYearly ? t('pricing.year') : t('pricing.month')}</span>
+                  <span className="text-gray-600">/{isYearly ? 'Year' : 'Month'}</span>
                 </div>
               </div>
               
@@ -148,7 +146,7 @@ const Pricing = () => {
                     : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
                 }`}
               >
-                {t('pricing.getStarted')}
+                Get Started
               </motion.button>
             </motion.div>
           ))}

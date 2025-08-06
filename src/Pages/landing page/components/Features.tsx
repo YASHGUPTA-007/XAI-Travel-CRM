@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { 
   UserPlus, 
   MapPin, 
@@ -11,7 +10,6 @@ import {
 } from 'lucide-react';
 
 const Features = () => {
-  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -20,33 +18,33 @@ const Features = () => {
   const features = [
     {
       icon: UserPlus,
-      title: t('features.leadManagement.title'),
-      description: t('features.leadManagement.description')
+      title: "Lead Management",
+      description: "Capture and nurture leads with automated follow-ups and personalized communication"
     },
     {
       icon: MapPin,
-      title: t('features.tripPlanning.title'),
-      description: t('features.tripPlanning.description')
+      title: "AI Trip Planning",
+      description: "Create personalized itineraries in minutes with our intelligent planning assistant"
     },
     {
       icon: Calendar,
-      title: t('features.bookingCalendar.title'),
-      description: t('features.bookingCalendar.description')
+      title: "Smart Booking Calendar",
+      description: "Manage bookings, appointments, and availability with an intuitive calendar interface"
     },
     {
       icon: MessageSquare,
-      title: t('features.autoFollowUps.title'),
-      description: t('features.autoFollowUps.description')
+      title: "Automated Follow-ups",
+      description: "Never lose a potential client with intelligent follow-up reminders and messaging"
     },
     {
       icon: FileText,
-      title: t('features.clientNotes.title'),
-      description: t('features.clientNotes.description')
+      title: "Client Notes & History",
+      description: "Keep detailed records of all client interactions, preferences, and travel history"
     },
     {
       icon: GitBranch,
-      title: t('features.pipelineTracking.title'),
-      description: t('features.pipelineTracking.description')
+      title: "Pipeline Tracking",
+      description: "Monitor your sales pipeline and track progress from lead to booking"
     }
   ];
 
@@ -68,10 +66,10 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            {t('features.title')}
+            Powerful Features for Modern Travel Professionals
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('features.subtitle')}
+            Everything you need to streamline your travel business and delight your clients
           </p>
         </motion.div>
         

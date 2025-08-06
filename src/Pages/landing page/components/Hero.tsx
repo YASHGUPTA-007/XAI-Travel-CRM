@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Play } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-  const { t } = useTranslation();
   const [text, setText] = useState('');
-  const fullText = t('hero.title');
+  const fullText = "AI-Powered Travel CRM";
   
   useEffect(() => {
     let i = 0;
@@ -46,7 +44,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
-            {t('hero.subtitle')}
+            Streamline your travel business with intelligent automation, AI-powered itineraries, and seamless customer management
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -55,7 +53,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              {t('hero.startFreeTrial')}
+              Start Free Trial
             </motion.button>
             
             <motion.button
@@ -64,7 +62,7 @@ const Hero = () => {
               className="px-8 py-4 bg-white/20 backdrop-blur text-white font-semibold rounded-xl border border-white/30 hover:bg-white/30 transition-all duration-300 flex items-center gap-2"
             >
               <Play size={20} />
-              {t('hero.watchDemo')}
+              Watch Demo
             </motion.button>
           </div>
         </motion.div>

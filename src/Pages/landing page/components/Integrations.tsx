@@ -1,22 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 
 const Integrations = () => {
-  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   const integrations = [
-    { name: t('integrations.googleWorkspace'), logo: "https://www.google.com/favicon.ico" },
-    { name: t('integrations.whatsapp'), logo: "https://web.whatsapp.com/favicon.ico" },
-    { name: t('integrations.stripe'), logo: "https://stripe.com/favicon.ico" },
-    { name: t('integrations.gmail'), logo: "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" },
-    { name: t('integrations.googleMaps'), logo: "https://maps.google.com/favicon.ico" },
-    { name: t('integrations.slack'), logo: "https://slack.com/favicon.ico" }
+    { name: "Google Workspace", logo: "https://www.google.com/favicon.ico" },
+    { name: "WhatsApp", logo: "https://web.whatsapp.com/favicon.ico" },
+    { name: "Stripe", logo: "https://stripe.com/favicon.ico" },
+    { name: "Gmail", logo: "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" },
+    { name: "Google Maps", logo: "https://maps.google.com/favicon.ico" },
+    { name: "Slack", logo: "https://slack.com/favicon.ico" }
   ];
 
   return (
@@ -37,10 +35,10 @@ const Integrations = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            {t('integrations.title')}
+            Seamless Integrations
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            {t('integrations.subtitle')}
+            Connect with your favorite tools and streamline your workflow
           </p>
         </motion.div>
         

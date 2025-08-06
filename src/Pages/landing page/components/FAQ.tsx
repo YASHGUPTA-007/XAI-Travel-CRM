@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Plus, Minus } from 'lucide-react';
 
 const FAQ = () => {
-  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -14,28 +12,28 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: t('faq.security.question'),
-      answer: t('faq.security.answer')
+      question: "Is my data secure?",
+      answer: "Yes, we use enterprise-grade security measures including SSL encryption, regular backups, and compliance with industry standards to keep your data safe."
     },
     {
-      question: t('faq.cancellation.question'),
-      answer: t('faq.cancellation.answer')
+      question: "Can I cancel my subscription anytime?",
+      answer: "Absolutely! You can cancel your subscription at any time with no cancellation fees. Your data will be available for 30 days after cancellation."
     },
     {
-      question: t('faq.trial.question'),
-      answer: t('faq.trial.answer')
+      question: "Is there a free trial?",
+      answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card required to start your trial."
     },
     {
-      question: t('faq.support.question'),
-      answer: t('faq.support.answer')
+      question: "What kind of support do you offer?",
+      answer: "We provide 24/7 email support, live chat during business hours, and comprehensive documentation. Enterprise customers get dedicated phone support."
     },
     {
-      question: t('faq.import.question'),
-      answer: t('faq.import.answer')
+      question: "Can I import my existing data?",
+      answer: "Yes, we support importing data from CSV files, Excel spreadsheets, and most popular CRM systems. Our team can help with the migration process."
     },
     {
-      question: t('faq.mobile.question'),
-      answer: t('faq.mobile.answer')
+      question: "Do you have a mobile app?",
+      answer: "Yes, our mobile app is available for both iOS and Android devices, giving you full access to your CRM on the go."
     }
   ];
 
@@ -61,10 +59,10 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            {t('faq.title')}
+            Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('faq.subtitle')}
+            Everything you need to know about XAI Travel CRM
           </p>
         </motion.div>
         

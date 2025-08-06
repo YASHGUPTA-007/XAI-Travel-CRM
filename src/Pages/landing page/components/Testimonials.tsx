@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Testimonials = () => {
-  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -14,25 +12,25 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: t('testimonials.sarah.name'),
-      role: t('testimonials.sarah.role'),
+      name: "Sarah Johnson",
+      role: "Travel Agency Owner",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: t('testimonials.sarah.text')
+      text: "XAI Travel CRM has revolutionized how we manage our clients. The AI-powered features help us create personalized itineraries in minutes, and our customer satisfaction has increased by 40%."
     },
     {
-      name: t('testimonials.mike.name'),
-      role: t('testimonials.mike.role'),
+      name: "Mike Chen",
+      role: "Corporate Travel Manager",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: t('testimonials.mike.text')
+      text: "Managing corporate travel has never been easier. The automated booking system and expense tracking features save us hours every week. Highly recommended!"
     },
     {
-      name: t('testimonials.emma.name'),
-      role: t('testimonials.emma.role'),
+      name: "Emma Rodriguez",
+      role: "Group Tour Organizer",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: t('testimonials.emma.text')
+      text: "The group management features are incredible. I can coordinate 50+ travelers seamlessly, and the AI chatbot handles most customer inquiries automatically."
     }
   ];
 
@@ -69,10 +67,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            {t('testimonials.title')}
+            What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('testimonials.subtitle')}
+            Discover why travel professionals worldwide trust XAI Travel CRM to grow their business
           </p>
         </motion.div>
         

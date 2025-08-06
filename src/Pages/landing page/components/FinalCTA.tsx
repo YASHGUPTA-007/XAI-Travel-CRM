@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useTranslation } from 'react-i18next';
 import { Calendar, ArrowRight } from 'lucide-react';
 
 const FinalCTA = () => {
-  const { t } = useTranslation();
   const [text, setText] = useState('');
-  const fullText = t('finalCTA.title');
+  const fullText = "Ready to Transform Your Travel Business?";
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -52,7 +50,7 @@ const FinalCTA = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
-            {t('finalCTA.subtitle')}
+            Join thousands of travel professionals who have already revolutionized their business with AI-powered CRM
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -61,7 +59,7 @@ const FinalCTA = () => {
               whileTap={{ scale: 0.95 }}
               className="px-10 py-5 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-3"
             >
-              {t('finalCTA.signUp')}
+              Start Free Trial
               <ArrowRight size={24} />
             </motion.button>
             
@@ -71,15 +69,15 @@ const FinalCTA = () => {
               className="px-10 py-5 bg-white/20 backdrop-blur text-white font-bold text-lg rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 flex items-center gap-3"
             >
               <Calendar size={24} />
-              {t('finalCTA.scheduleDemo')}
+              Schedule Demo
             </motion.button>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { number: "1000+", label: t('finalCTA.stats.agencies') },
-              { number: "50K+", label: t('finalCTA.stats.bookings') },
-              { number: "98%", label: t('finalCTA.stats.satisfaction') }
+              { number: "1000+", label: "Travel Agencies" },
+              { number: "50K+", label: "Bookings Processed" },
+              { number: "98%", label: "Customer Satisfaction" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
